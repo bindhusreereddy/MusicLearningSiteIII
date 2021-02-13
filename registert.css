@@ -1,0 +1,44 @@
+/* CSS document for applying styles  */
+
+body
+{
+	background-color:#F0FFFF;
+	color:#000000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+	
+}
+table
+{
+	width: 900px;
+	border-collapse:collapse;
+	table-layout: fixed;
+}
+td
+{
+	vertical-align: top;
+	padding: 3px;
+	word-wrap: break-word;
+}
+
+#fullpage
+{
+	margin: 10px;
+}
+
+.label
+{
+	text-align: left;
+}
+.input_col
+{
+	text-align: left;
+}
+
+.feedback_col
+{
+	text-align: center;
+	vertical-alig: middle;
+	color: LightGray;
+	font-size: small;
+}

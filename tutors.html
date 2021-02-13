@@ -1,0 +1,70 @@
+
+<!-- This is an registration Form -->
+<html>
+ <head>
+    <link rel="stylesheet" type="text/css" href="registert.css">
+   <title>tutors</title>
+   <script type="text/javascript" src="registert.js"></script>
+ </head>
+ 
+<body>
+	
+
+	<form action="insertnew.php" method="POST" >
+		
+		<h1>Registration Form</h1>
+			<table border="0">
+			
+				<tr>
+					<td class = "label"><b>FullName:</b></td>
+					<td class = "input_col"><input name="firstname" id="firstname" type="text" onblur="validatefirstname();" required></td>
+					<td class = "feedback_col"><span id="firstnameprompt">&nbsp;</span></td>
+				</tr>
+				
+				<tr>
+					<td class="label"><b>Phone Number:</b></td>
+					<td class="input_col"><input name="phone" id="phone" type="text" onBlur="validatePhoneNum();" required></td>
+					<td class="feedback_col"><span id="phonePrompt">XXXXXXXXXX</span></td>
+				</tr>
+				
+				<tr>
+					<td class="label"><b>E-mail:</b></td>
+					<td class="input_col"><input name="email" id="email" type="text" onBlur="validateEmail();" required></td>
+					<td class="feedback_col"><span id="emailPrompt">&nbsp;</span></td>
+				</tr>
+				
+				<tr>
+					<td class="label"><b>Gender:</b></td>
+					<td class="input_col" align="left">Female<input type="radio" id="female" name="gender" value="f" required>
+					<td class="input_col" align="left">Male<input type="radio" id="male" name="gender" value="m">
+				</tr>	
+				
+				<tr>
+					<td>
+					<label> <b>Specialization<b> </label>  
+					<select name="qual">  
+					<option value = "Vocals">Vocals</option>  
+					<option value = "Guitar"> Guitar</option>  
+					<option value = "Keyboard"> Keyboard </option>  
+					<option value = "Violin"> Violin </option>
+					<option value = "Drums"> Drums</option>	
+					<option value = "Sitar"> Sitar </option>					
+					</select>  
+					</td>
+				</tr>
+				
+				<!-- This Field is for Accepting Languages Known using checkboxes -->
+				<tr>
+					<td class="label"><b>Languages U Know:</b></td>
+					<td class="input_col"><input name="lang" id="lang" type="text"  required></td>
+				</tr>	
+				<tr>
+					<td colspan="2" align="center"><input type="submit" value="Submit"></td>
+					<td colspan="2" align="left"><input type="reset" value="Reset"></td>
+				</tr>
+			</table>
+
+		</form>
+		
+	</body>
+</html>
